@@ -104,7 +104,7 @@ def add_model(model, model_name, desc, features=None,feature_types=None, feat_or
         with open('.\\preprocess\\' + str(filename), 'w') as file:
             file.write(filename)
         preprocess_query = 'insert into preprocess (file_name,model_id) values (?,?)'
-        conn.execute(preprocess_query,[preprocess.filename, model_id]
+        conn.execute(preprocess_query,[preprocess.filename, model_id])
         conn.commit()
     
     return model_id
@@ -314,7 +314,7 @@ def model_list():
             conn.commit()
         if os.path.exists('.\\preprocess\\' + str(file_name[0])):
             os.remove('.\\preprocess\\' + str(file_name[0]))
-                     
+
     if check_session():
         if check_admin() == 1:
             return render_template('model_list.html')
