@@ -1,0 +1,31 @@
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 220px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 1; /* Stay at the top */
+  left: 0;
+  border-right: solid;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 80px;
+}
+
+/* Style page content */
+.main {
+  margin-left: 220px; /* Same as the width of the sidebar */
+  padding: 80px 40px;
+}
+hr {
+  border: 1px solid;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

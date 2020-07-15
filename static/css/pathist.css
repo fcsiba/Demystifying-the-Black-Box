@@ -1,0 +1,10 @@
+.pathist-body {
+        padding: 80px 40px;
+    }
+label {
+        padding-right: 20px;
+        font-size: 25px;
+}
+hr {
+        border: 1px solid;
+}

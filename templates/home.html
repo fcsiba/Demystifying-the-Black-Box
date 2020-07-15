@@ -1,0 +1,42 @@
+<!--
+    MedAI Assistant
+    Copyright (C) 2020  Abdullah Humayun, Abdul Razaque Soomro, Danysh Soomro
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+{% extends "base.html" %}
+{% set active_page = "home" %}
+{% block head %}
+<link href="../static/css/home.css" rel="stylesheet">
+{% endblock %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<div class="container text-center">
+    <h1 class="display-4">Welcome Doctor {{session["name"]}}</h1>  
+    <div class="row">
+        <div class="col-lg-12 center-elements">
+            <p>
+                <a href="/entry" class="btn btn-squared-default-plain btn-data btn-space">
+                    <br /><br/>
+                    Data Entry
+                </a>
+                <a href="/pathist" class="btn btn-squared-default-plain btn-patient btn-space">
+                    <br /><br/>
+                    Patient History
+                </a>
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

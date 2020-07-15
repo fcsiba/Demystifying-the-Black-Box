@@ -1,0 +1,36 @@
+.btn-squared-default-plain
+{
+    width: 200px !important;
+    height: 200px !important;
+    font-size: 23px;
+    color: #F0FFFF;
+}
+
+.btn-patient
+{
+    background-color: #2F4F4F;
+}
+
+.btn-data
+{
+    background-color: #696969;
+}
+
+.btn-squared-default-plain:hover
+{
+    border: 0px solid white;
+}
+
+.btn-space 
+{
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.center-elements 
+{
+    margin-top: 200px;
+}
+h1 {
+    padding-top: 80px;
+}

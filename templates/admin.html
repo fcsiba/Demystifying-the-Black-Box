@@ -1,0 +1,69 @@
+<!--
+    MedAI Assistant
+    Copyright (C) 2020  Abdullah Humayun, Abdul Razaque Soomro, Danysh Soomro
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+{% extends "base.html" %} {% set active_page = "admin" %} {% block title %}Admin Panel{% endblock %} {% block head %}
+<link href="../static/css/admin.css" rel="stylesheet"> {% endblock %} {% block content %}
+<div class="admin-body">
+    <h1 class="display-4">Admin Panel</h1>
+    <br/>
+    <hr><br/>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h1>Create User</h1>
+                <form method="POST" name='form-user'>
+                    <label>Name</label>
+                    <input type="text" class="form-control col-7" name="name-user" required>
+                    <label>Email</label>
+                    <input type="email" class="form-control col-7" name="email-user" required>
+                    <label>Password</label>
+                    <input type="text" class="form-control col-7" name="pass-user" required>
+                    <br>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" id="doctor" value="0" name="check-admin" required>
+                        <label class="form-check-label" for="doctor">Doctor</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" id="admin" value="1" name="check-admin" required>
+                        <label class="form-check-label" for="admin">Admin</label>
+                    </div>
+                    <br><br>
+                    <button type="submit" class="btn btn-primary mb-2" name="btn-user" value="submitted">Add User</button>
+                </form>
+            </div>
+            <div class="col-6">
+                <h1>Upload Model</h1>
+                <form method="POST" name='form-model' enctype="multipart/form-data">
+                    <label>Name</label>
+                    <input type="text" class="form-control col-7" name="name-model" required>
+                    <label>Description</label>
+                    <input type="text" class="form-control col" name="desc-model" required>
+                    <br>
+                    <label>Upload Model File</label>
+                    <input type="file" class="form-control-file" id="model-upload" name="upload-model" required>
+                    <label>Upload Preprocess File</label>
+                    <input type="file" class="form-control-file" id="preprocess-upload" name="upload-file" required>
+                    <label>Upload Features File</label>
+                    <input type="file" class="form-control-file" id="features-upload" name="upload-feat" required>
+                    <br>
+                    <button type="submit" class="btn btn-primary mb-2" name="btn-model" value="submitted">Add Model</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

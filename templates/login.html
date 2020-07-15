@@ -1,0 +1,52 @@
+<!--
+    MedAI Assistant
+    Copyright (C) 2020  Abdullah Humayun, Abdul Razaque Soomro, Danysh Soomro
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>MedAI App</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sign-in/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/assets/dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../static/css/signin.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+    <form class="form-signin" action="#" method="POST">
+      <h1 class="display-4">MedAI Assistant</h1>
+      <img class="mb-4" src="../static/assets/brand/medical.png" alt="" width="90" height="90">
+      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+      <input type="email" name="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+      <input type="password" name="inputPassword" class="form-control" placeholder="Password" required>
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div>
+      <div style="color: red">{{message}}</div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p>
+    </form>
+  </body>
+</html>

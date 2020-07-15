@@ -1,0 +1,28 @@
+<!--
+    MedAI Assistant
+    Copyright (C) 2020  Abdullah Humayun, Abdul Razaque Soomro, Danysh Soomro
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+{% extends "base.html" %} {% set active_page = "entry" %} {% block head %}
+<link href="../static/css/diagnosis.css" rel="stylesheet"> {% endblock %} {% block title %}Diagnosis Results{% endblock %} {% block content %}
+
+<div class="diagnosis-body">
+    <h1 class="display-4">Prediction</h1>
+    Model predicted the following value: {{prediction}}
+
+    <h1 class="display-4">SHAP Plot</h1>
+    <img src="data:image/png;base64,{{ image }}" style="max-width:100%;max-height:70%;">
+</div>
+{% endblock %}
