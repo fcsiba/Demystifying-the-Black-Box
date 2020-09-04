@@ -1,4 +1,4 @@
-# FYP-MedAI
+# Demystifying-the-Black-Box
 ## Description
 An open-source Medical Assistant using AI and AI explainability techniques.
 
